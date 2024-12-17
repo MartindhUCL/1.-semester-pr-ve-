@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baremigoglidtmere </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet.css">
+</head>
+<body>
+    <!-- navbar-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFEFCB"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>    
+            <li><a href="færdigheder.html">Portfolie</a></li>
+            <li><a href="ommig.html">Om mig</a></li>  
+            <li><a href="kontaktmig.html">Kontakt mig</a></li>  
+          </ul>
+        <ul>
+          <li><a href="index.html">Baremigoglidtmere</a></li>
+          <li class="hideOnMobile"><a href="færdigheder.html">Portfolie</a></li>
+          <li class="hideOnMobile"><a href="ommig.html">Om mig</a></li>  
+          <li class="hideOnMobile"><a href="kontaktmig.html">Kontakt mig</a></li> 
+          <li class="menu__knap" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFEFCB"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+       </nav>  
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }  
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <!-- video og billede -->
+  <div class="Hero">
+        <img class="hero__billede-forside" src="img/outfit3.jpg" alt="img">
+    <video autoplay muted loop
+    src="vid/vidmute.mp4" class="bg-video">
+    </video>
+</div>
+    <!-- social icons-->
+<div class="social-icons">
+    <a class="button-social" href="https://www.instagram.com/bare_martin/" target="blank_">
+    <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a class="button-social" href="https://dk.pinterest.com/Baremigoglidtmere/_created/" target="blank_">
+    <ion-icon name="logo-pinterest"></ion-icon>
+    </a>
+</div>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

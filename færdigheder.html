@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baremigoglidtmere</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>    
+            <li><a href="index.html">Portfolie</a></li>
+            <li><a href="ommig.html">Om mig</a></li>  
+            <li><a href="kontaktmig.html">Kontak mig</a></li>  
+          </ul>
+        <ul>
+          <li><a href="index.html">Baremigoglidtmere</a></li>
+          <li class="hideOnMobile"><a href="#">Portfolie</a></li>
+          <li class="hideOnMobile"><a href="ommig.html">Om mig</a></li>  
+          <li class="hideOnMobile"><a href="kontaktmig.html">Kontak mig</a></li> 
+          <li class="menu__knap" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>  
+     </nav>  
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }  
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>  
+
+<div class="portfolie">
+    <h1 class="h1__portfolie">
+        Portfolie
+    </h1>
+    <p class="p1__portfolie">
+        På denne side kan du se mere af hvad jeg kan tilbyde dig.
+        Jeg rigtig stærk inden for de forskellig Adobe programmer, men specilisere mig mest for billede og video
+    </p>
+</div>
+    <div class="main__outfit-billedeer">
+    <h2 class="h2__outfit-billeder">
+         Outfit billedere 
+    </h2>
+    <p class="p2__lookbook-billedere">
+        Billederen skal afspejle et lookbook format.
+        De outfit's det bliver vist er stylede af mig.
+        alle billedere der er vist her er taget af mig.
+    </p>
+    <div class="outfit__billedere-img">
+        <img class="outfit1" src="img/outfit4.jpg" alt="">
+        <img class="outfit2" src="img/outfit2.jpg" alt="">
+    </div>
+         <div class="main__lookbook-vid">
+         <h3 class="h3__lookbook-vid">
+             Lookbook video
+         </h3>
+         <p class="p3__lookbook-vid">
+            En lookbook med alt fra streetwear til couture.
+        </p>
+        <div class="studie__billede">
+         <a class="studie__billede1" href="https://youtu.be/XZ_cTCrQ-kE" target="blank_"><img src="img/stuide.png" alt="LookBook" ></a>
+         </div>
+            <div class="main__potrat&produkt-billede">
+            <h4 class="h4__ppb">
+                Potræt & Produkt billedere 
+            </h4>
+            <p class="p4__ppb">
+                her ser du et potræt med smag af street og elegance. produkt billedet er minimalistisk men, clean
+            </p>
+            </div>
+        <div class="ppb__img">
+            <img class="ppb__img1" src="img/potræt.png" alt="img">
+            <img class="ppb__img2" src="img/pdb.jpg" alt="img">
+         </div>
+         <div class="reklameaef__tekst">
+            <h5 class="h5__reklameaef">
+                Reklame video & After effects 
+            </h5>
+            <p class="p5__reklameaef">
+                Reklame vidoen er lavet til produktet "Heel me". Det en video der er berenget
+                til at blive lagt på på de socialmedia, derfor er formaten sådan. 
+                Aftereffects videon afspejler føelse af at tag en maske på i sin hverdag som, mange gør i denne branche. 
+            </p>
+            <div class=reklameaef__vid>
+            <video class="reklame__vid" controls src="vid/1028.mp4"></video>
+            <video class="aef__vid" controls src="vid/FULDE-BILLEDE-UDEN-ARM-3.mp4"></video>
+            </div>
+         </div>
+ </div>
+</div>
+</body>
+</html>

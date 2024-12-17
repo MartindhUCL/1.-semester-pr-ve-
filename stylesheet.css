@@ -1,0 +1,487 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #5F3C36;
+}
+body{
+    min-height: 100vh;  
+}
+/* alt med navbar */
+nav{
+    box-shadow: 3px 3px 5px black;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFEFCB;
+}
+nav a:hover{
+    background-color: #355B5A;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(25px);
+    box-shadow: 10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+/* hero billede forside */
+.hero__billede-forside{
+    display: none;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/* nav media */
+@media(max-width: 800px){
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu__knap{
+    display: block;
+   }
+} 
+@media(max-width: 550px){
+    .sidebar{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-ul{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;   
+    }
+}
+/* forside video */
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9){ 
+  .bg-video{ 
+     width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+  }
+}
+@media (max-aspect-ratio: 16/9){ 
+    .bg-video{ 
+       width: 100%;
+      height: 100%;
+      background-position: center;
+      object-fit: cover;
+    }
+  }
+@media (max-width: 767px){
+    .bg-video{
+        display: none;
+    }
+    .hero__billede-forside{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}  
+/* social knapper */
+    .button-social{
+        color: #FFEFCB;
+        text-decoration: none;
+        transition: coler 0.2s;
+        margin: 0 10px;
+        font-size: 45px;
+    }
+    .button-social:hover{
+        color: #355B5A;
+    }
+    .social-icons{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    }
+/* Portfolie side */
+.portfolie__box{
+    margin: 10px;
+    padding: 10px;
+}
+.h1__portfolie{
+    color: #FFEFCB; 
+    text-align: center;
+    font-family: Roboto;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.p1__portfolie{
+    color: white;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
+    border-style: solid;
+}
+.h2__outfit-billeder{
+    color: #FFEFCB; 
+    text-align: center;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.p2__lookbook-billedere{
+    color: white;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;   
+}
+.h3__lookbook-vid{
+    color: #FFEFCB; 
+    text-align: center;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 2rem;
+
+}
+.p3__lookbook-vid{
+    color: white;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center; 
+    padding: 2rem;
+    
+}
+.outfit1{
+    width: 100%;
+    padding: 1rem;
+}
+.outfit2{
+    width: 100%;
+    padding: 1rem;
+}
+.studie__billede1{
+  max-width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.h4__ppb{
+    color: #FFEFCB; 
+    text-align: center;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 2rem;
+ 
+}
+.p4__ppb{
+    color: white;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;   
+    padding: 2rem; 
+}
+.ppb__img1{
+    width: 100%;
+    padding: 1rem;
+}
+.ppb__img2{
+    width: 100%;
+    padding: 1rem;
+}
+.ppb__img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.h5__reklameaef{
+    color: #FFEFCB; 
+    text-align: center;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 2rem;
+ 
+}
+.p5__reklameaef{
+    color: white;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;   
+    padding: 2rem;  
+}
+.reklame__vid{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.aef__vid{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.reklameaef__vid{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+    /* om mig */
+ body {
+      margin: 0;
+      font-family:Roboto;
+      background-color: #4c2f28;
+      color: #ffffff;
+    }
+.container__ommig {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      text-align: center;     
+    }
+
+    /* Styling af billedet */
+ .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* style til tekst box */
+ .text-box {
+      background-color: #335353;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+ .h1__ommig-overskift{
+        color: #FFEFCB;
+    }
+    /* kontakt side*/
+input[type=text], select, textarea {
+    font-family: Roboto;
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  input[type=submit] {
+    background-color: #5F3C36 ;
+    color: #FFEFCB;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #335353;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .h1__kontaktmig{
+    color: #FFEFCB;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+@media only screen and (min-width: 200px){
+       /* h1__portfolie */
+    .h1__portfolie{
+        font-size: 4rem;
+     }
+        /* p1__portfolie */
+    .p1__portfolie{
+        font-size: 1rem;
+    }
+      /* h2__outfit-billeder */
+    .h2__outfit-billeder{
+        font-size: 3rem;
+    }
+      /* p2__look-billedere */
+    .p2__lookbook-billedere{
+        font-size: 1rem;
+    }
+    /* h3 lookbook__vid */
+    .h3__lookbook-vid{
+        font-size: 3rem;
+    }
+     /* p3 lookbook__vid */
+    .p3__lookbook-vid{
+        font-size: 1rem;
+    }  
+    /* h4 ppb*/
+    .h4__ppb{
+        font-size: 3rem;
+    }
+    .studie__billede1{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 750px){
+    /* outfil billedere*/
+    .outfit1{
+        width: 50%;
+    }
+    .outfit2{
+        width: 50%;
+    }
+    .outfit__billedere-img{
+        display: flex;
+    }
+    
+     /* h1__portfolie*/
+    .h1__portfolie{
+        font-size: 10rem;
+    }
+     /* p1__portfolie*/
+    .p1__portfolie{
+        font-size: 1rem;
+    }
+    /* h2__outfit-billeder*/
+    .h2__outfit-billeder{
+        font-size: 5rem;
+    }
+     /* p2__look-bolledere*/
+     .p2__lookbook-billedere{
+            font-size: 1rem;   
+            margin: 5%;
+    }
+      /* lookbook__vid */
+      .h3__lookbook-vid{
+        font-size: 3rem;
+    }
+     /* p3 lookbook__vid */
+     .p3__lookbook-vid{
+        font-size: 1rem;
+    }
+     /* h4 ppb*/
+     .h4__ppb{
+        font-size: 3rem;
+    }
+    .ppb__img1{
+        width: 50%;
+    }
+    .ppb__img2{
+        width: 50%;
+    }
+    .studie__billede1{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1030px){
+    /* h1__portfolie*/
+    .h1__portfolie{
+        font-size: 10rem;
+    }
+    /* p1__portfolie*/
+    .p1__portfolie{
+        font-size: 2rem;
+    }
+      /* h2__outfit-billeder*/
+    .h2__outfit-billeder{
+        font-size: 5rem;
+    }
+     /* p2__look-bolledere*/
+    .p2__lookbook-billedere{
+        font-size: 1rem;
+        }
+      /* lookbook__vid */
+     .h3__lookbook-vid{
+        font-size: 5rem;
+    }
+     /* p3 lookbook__vid */
+     .p3__lookbook-vid{
+        font-size: 1rem;
+    }
+     /* studie__billede */
+     .studie__billede1{
+        width: 100%;
+    }
+     /* h4 ppb*/
+     .h4__ppb{
+        font-size: 5rem;
+    }
+    .studie__billede1{
+        width: 100%;
+    }
+}
